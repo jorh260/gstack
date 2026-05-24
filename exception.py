@@ -5,7 +5,7 @@
     "colab": {
       "provenance": [],
       "mount_file_id": "13oi0mP01PpjoOmq8nc0WVT_yHquiqQi_",
-      "authorship_tag": "ABX9TyO3RGwHl71n6tQzrffXSP2c",
+      "authorship_tag": "ABX9TyNbUtaAxFtguuU7hn4KJSu4",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -29,11 +29,25 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 2,
+      "execution_count": 1,
       "metadata": {
-        "id": "fWUF-3RH3nyn"
+        "id": "fWUF-3RH3nyn",
+        "outputId": "5fae29b4-d6d4-4013-87f9-721cc4827bb9",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        }
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid syntax (938560586.py, line 23)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipykernel_771/938560586.py\"\u001b[0;36m, line \u001b[0;32m23\u001b[0m\n\u001b[0;31m    super().__init__(f\"Student not found: {student}\")p\u001b[0m\n\u001b[0m                                                     ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ],
       "source": [
         "# we are creating exception errors for the big project name score predict data engine.\n",
         "\n",
@@ -57,7 +71,7 @@
         "class StudentNotFoundError(DataError):\n",
         "  def __init__(self, student):\n",
         "     self.student = student\n",
-        "     super().__init__(f\"Student not found: {student}\")\n",
+        "     super().__init__(f\"Student not found: {student}\")p\n",
         "\n",
         "\n",
         "class FileLoadError(DataError):\n",
